@@ -47,6 +47,8 @@
     "test:schemas": "node test/test-agent-schema.js",
     "validate:refs": "node tools/validate-file-refs.js --strict",
     "validate:schemas": "node tools/validate-agent-schema.js"
+    ,"create:prd": "node tools/create-prd-cli.js --project_name=\"BMAD Sample\" --user_name=\"Automated Bot\" --output=docs/prd.md --overwrite=true",
+    "test:create-prd": "jest test/create-prd.test.js --runInBand"
   },
   "lint-staged": {
     "*.{js,cjs,mjs}": [
